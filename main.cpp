@@ -14,7 +14,8 @@ int main(int argc, char **argv)
 
     using namespace tinygltf;
 
-    for (int i = 0; i < 100; i++) {
+    static constexpr int repetitions = 1; // 100
+    for (int i = 0; i < repetitions; i++) {
         Model model;
         TinyGLTF loader;
         std::string err;
